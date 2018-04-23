@@ -1,0 +1,23 @@
+{
+  "name": "blockchainapp",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "network": "testrpc -p 8550",
+    "migrate": "cd truffle && truffle migrate --network development",
+    "start": "node ./bin/www",
+    "test": "cd truffle && truffle deploy && truffle test ./myTruffleTest.js && cd .. && npm run myOtherTests"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "http-errors": "~1.6.2",
+    "jade": "~1.11.0",
+    "morgan": "~1.9.0",
+    "babel-register": "^6.24.1",
+    "ethereumjs-testrpc": "^3.0.5",
+    "react-scripts": "0.9.5",
+    "truffle-contract": "^2.0.0"
+  }
+}
